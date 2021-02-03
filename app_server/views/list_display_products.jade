@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  br
+  br
+  h1(style='text-align:center;') List of products
+  
+  br
+  br
+  br
+  ol
+    each product in products
+        li.list 
+            a(href=`/products/${product._id}`) #{product.productName} : #{product.price} : #{product.benefit}
+  p
+    a(href=`/new`)  ADD NEW

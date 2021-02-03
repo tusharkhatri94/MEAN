@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    h1= title
+    .row
+        .col-xs-12.col-md-6
+            form.form-horizontal(action="", method="post", role="form")
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for="productName") [Product Name
+                    .col-xs-12.col-sm-10
+                        input#name.form-control(name="productName")
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for="type") type
+                    .col-xs-12.col-sm-10
+                        input#name.form-control(name="type")
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for="price") Price
+                    .col-xs-12.col-sm-10
+                        input#name.form-control(name="price")
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for="benefit") Benefit
+                    .col-xs-12.col-sm-10
+                        input#name.form-control(name="benefit")
+                button.btn.btn-default.pull-right Add my Product
+        .col-xs-12.col-md-4

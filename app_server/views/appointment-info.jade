@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+    .col-md-12
+        br
+        br
+        h1(style='text-align:center;') Apointment Details of #{currentAppointment.customerName}
+        br
+        h3 Name: #{currentAppointment.customerName}
+        h3 EmailId: #{currentAppointment.emailid}
+        h3 appointmentDate: #{currentAppointment.appointmentDate}
+        h3 contactNo: #{currentAppointment.contactNo}
+        h3 treatment: #{currentAppointment.treatment}
+        

@@ -1,0 +1,14 @@
+extends layout
+
+block content
+
+    .col-md-12
+        br
+        br
+        h1(style='text-align:center;') Product Details of #{currentProduct.productName}
+        br
+        h3 Name: #{currentProduct.productName}
+        h3 Type: #{currentProduct.type}
+        h3 ProductPrice: #{currentProduct.price}
+        h3 Benefit: #{currentProduct.benefit}
+        
